@@ -1,0 +1,85 @@
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  background: #f4f5f7;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Header ── */
+header {
+  background: #1a1a2e;
+  color: #fff;
+  padding: 0 2rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,.4);
+}
+
+header .logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  color: #e94560;
+}
+
+header nav a {
+  color: #ccc;
+  margin-left: 1.5rem;
+  font-size: .95rem;
+  transition: color .2s;
+}
+
+header nav a:hover { color: #fff; text-decoration: none; }
+
+/* ── Main container ── */
+main {
+  flex: 1;
+  max-width: 960px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* ── Hero banner ── */
+.hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+  color: #fff;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: .75rem;
+  letter-spacing: .03em;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  color: #adb5bd;
+}
+
+/* ── Footer ── */
+footer {
+  background: #1a1a2e;
+  color: #888;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: .85rem;
+}
